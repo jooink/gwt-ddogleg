@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.6.1-rc1//EN"
+  "http://google-web-toolkit.googlecode.com/svn/tags/2.6.1-rc1/distro-source/core/src/gwt-module.dtd">
+<module rename-to='gwtddogleg'>
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+
+  <inherits name='com.jooink.gwtddogleg.GwtDDogLeg_lib'/>
+  
+  <entry-point class='com.jooink.gwtddogleg.client.GwtDDogLeg'/>
+  <inherits name="com.google.gwt.logging.Logging"/>
+
+  <!-- Specify the paths for translatable code                    -->
+  <set-property name="gwt.logging.enabled" value="TRUE"/>
+  
+  <set-property name="gwt.logging.logLevel" value="ALL"/>
+  <set-property name="gwt.logging.consoleHandler" value="DISABLED" />
+  <set-property name="gwt.logging.developmentModeHandler" value="DISABLED" />
+  <set-property name="gwt.logging.hasWidgetsHandler" value="DISABLED" />
+  <set-property name="gwt.logging.systemHandler" value="DISABLED" />
+  <set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED" />
+  
+  <source path='client'/>
+  <source path='shared'/>
+
+  <super-source path="jre" />
+  
+  <add-linker name="xsiframe"/>
+</module>
